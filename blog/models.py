@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone
-class  post(models.Model):
+class  Post(models.Model):
 	author = models.ForeignKey('auth.user')
 	title = models.CharField(max_length=200)
 	text = models.TextField()
